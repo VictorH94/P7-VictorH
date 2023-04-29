@@ -1,0 +1,28 @@
+.About {
+    min-height: 60vh;
+}
+
+.FiabiliteRespectServiceSecurite {
+    width: 66%;
+    margin: 35px auto 35px;
+}
+
+/* Responsive pour les tablettes et mobiles */
+
+@media screen and (max-width: 1060px) {
+    .FiabiliteRespectServiceSecurite {
+        margin: 35px auto 35px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .About {
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .FiabiliteRespectServiceSecurite {
+        width: 90%;
+    }
+}

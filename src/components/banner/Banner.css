@@ -1,0 +1,70 @@
+.Banner {
+    border-radius: 25px;
+    height: 223px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-banner {
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.dark-banner {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+.title {
+    color: #ffffff;
+    font-size: 48px;
+    left: 50%;
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1;
+}
+
+/* Responsive pour les tablettes et mobiles */
+
+@media screen and (max-width: 680px) {
+    .Home>.Banner {
+        border-radius: 25px;
+        height: 111px;
+        width: 90%;
+        position: relative;
+    }
+
+    .Banner {
+        border-radius: 25px;
+        height: 223px;
+        width: 90%;
+    }
+
+    .img-banner {
+        height: 100%x;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .dark-banner {
+        border-radius: 10px;
+      }
+
+    .title {
+        left: 37%;
+        text-align: left;
+        font-size: 22px;
+    }
+}
+

@@ -1,0 +1,282 @@
+.OfferDetails {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.offerPictureFlecheGaucheDroite {
+    position: relative;
+}
+
+.offerPictureFlecheGaucheDroite .offerImg {
+    border-radius: 25px;
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.offerPictureFlecheGaucheDroite .fleche-gauche {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 25px;
+    font-size: 50px;
+    color: #fff;
+    background-color: #ffffff00;                       
+    border-style: none;
+    cursor: pointer;
+}
+
+.offerPictureFlecheGaucheDroite .fleche-droite {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 25px;
+    font-size: 50px;
+    color: #fff;
+    background-color: #ffffff00;                       
+    border-style: none;
+    cursor: pointer;
+}
+
+.slide-counter {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    bottom: 4%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.offerTopInfos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.offerTopInfos h1, p {
+    color: #FF6060;
+}
+
+.offerTopInfos h1 {
+    font-size: 22px;
+}
+
+.offerTopInfos p {
+    font-size: 16px;
+}
+
+.tag:first-of-type {
+    margin-left: 0;
+}
+
+.tag {
+    background-color: #ff6060;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin: auto 10px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.owner-name {
+    font-size: 17px;
+    color: #FF6060;
+    margin-right: 10px;
+    text-align: right;
+    width: 100px;
+}
+
+.owner-photo {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+}
+
+.rating {
+    margin-top: 10px;
+    position: relative;
+    left: 22px;
+    top: 5px;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+
+.fullStar {
+    color: red;
+}
+
+.emptyStar {
+    color: silver;
+}
+
+.namePictureRating {
+   position: relative;
+}
+
+.owner-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description-equipements {
+    display: inline-flex;
+    gap: 0 75px;
+    line-height: 22.5px;
+    list-style: none;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.description-equipements>.collapseItem {
+    width: 50%;
+}
+
+/* Responsive pour les PC */
+
+@media screen and (max-width: 1490px) {
+    .offerPictureFlecheGaucheDroite .offerImg {
+        height: 240px;
+    }
+
+    .offerPictureFlecheGaucheDroite .fleche-gauche {
+        top: 50%;
+    }
+
+    .offerPictureFlecheGaucheDroite .fleche-droite {
+        top: 50%;
+    }
+
+    .owner-name {
+        font-size: 17px;
+        top: 25px;
+        right: 50px
+    }
+
+    .owner-photo {
+        height: 50px;
+        width: 50px;
+        left: 88px;
+    }
+
+    .rating {
+        margin-top: 10px;
+        position: relative;
+        left: 25px;
+        top: 7px;
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+}
+
+/* Responsive pour les tablettes et mobiles */
+
+@media screen and (max-width: 1090px) {
+    .OfferDetails {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .offerPictureFlecheGaucheDroite .offerImg {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .offerPictureFlecheGaucheDroite .fleche-gauche {
+        left: -20px;
+        top: 50%;
+        font-size: 27px;
+    }
+
+    .offerPictureFlecheGaucheDroite .fleche-droite {
+        right: -20px;
+        top: 50%;
+        font-size: 27px;
+    }
+
+    .tag {
+        font-size: 9px;
+        margin: auto 5px;
+        padding: 3px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide-counter {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .offerTopInfos {
+       display: block;
+    }
+
+    .housing-infos {
+        margin-bottom: 0px;
+    }
+
+    .namePictureRating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .owner-infos {
+        margin-bottom: 0;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .emptyStar {
+        font-size: 18px;
+    }
+
+    .owner-photo {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .description-equipements {
+        display: block;
+    }
+
+    .description-equipements>.collapseItem {
+        width: 100%;
+    }
+
+    .fullStar {
+        font-size: 18px;
+    }
+
+    .collapseHeader {
+        height: 5vh;
+        min-height: 30px;
+        border-radius: 5px;
+    }
+
+    .tag {
+        font-size: 11px;
+    }
+
+    .rating {
+        margin-top: 0px;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+

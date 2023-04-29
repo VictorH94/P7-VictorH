@@ -1,0 +1,46 @@
+.accueil {
+    margin: auto 25px;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.apropos {
+    color: #FF6060;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    margin: auto 25px;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.inactive {
+    color: #FF6060;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: auto 0px auto 25px;
+}
+
+/* Responsive pour les tablettes et mobiles */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+
+
+
+
